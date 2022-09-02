@@ -283,13 +283,13 @@ variable "enable_dns_support" {
 variable "enable_classiclink" {
   description = "Should be true to enable ClassicLink for the VPC. Only valid in regions and accounts that support EC2 Classic."
   type        = bool
-  default     = null
+  default     = false
 }
 
 variable "enable_classiclink_dns_support" {
   description = "Should be true to enable ClassicLink DNS Support for the VPC. Only valid in regions and accounts that support EC2 Classic."
   type        = bool
-  default     = null
+  default     = false
 }
 
 variable "enable_nat_gateway" {
